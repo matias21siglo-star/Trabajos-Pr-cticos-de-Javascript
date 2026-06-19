@@ -45,23 +45,23 @@ Calcula el promedio de las tres notas usando operadores aritméticos.
 Muestra el promedio en la consola.  
 Usa un condicional para indicar si el promedio es suficiente para aprobar (ejemplo: mayor o igual a 6).
 */
-let nota1 = parsefloat(prompt("Ingrese la primera nota:"));
-let nota2 = parsefloat(prompt("Ingrese la segunda nota:"));
-let nota3 = parsefloat(prompt("Ingrese la tercera nota:"));
+let nota1 = parseFloat(prompt("Ingrese la primera nota:"));
+let nota2 = parseFloat(prompt("Ingrese la segunda nota:"));
+let nota3 = parseFloat(prompt("Ingrese la tercera nota:"));
 
 let promedio = (nota1 + nota2 + nota3) / 3;     
 alert("El promedio de las notas es: " + promedio.toFixed(2));
 
-if (promedio == 10) {
-   console.log("🌟¡Felicidades! Destacado.");
+if (promedio === 10) {
+   alert.log("🌟¡Felicidades! Destacado.");
 } else if (promedio >= 8) {
-    console.log("🥳 Muy bien.");
+    alert("🥳 Muy bien.");
 } else if (promedio >= 6) {
-    console.log("🙂 Aprobado.");
+    alert("🙂 Aprobado.");
 } else if (promedio >= 4) {
-    console.log("😕 Aún puedes mejorar.");
+    alert("😕 Aún puedes mejorar.");
 } else {
-    console.log("😞 Necesitas esforzarte más.");
+    alert("😞 Necesitas esforzarte más.");
 }
 
-// conaulta ...por que el practico 3 no me funciona o no me tira el promedio.
+// Trabajo Practico 3 Solucionado
