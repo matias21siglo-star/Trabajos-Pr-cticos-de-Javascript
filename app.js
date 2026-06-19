@@ -65,3 +65,17 @@ if (promedio === 10) {
 }
 
 // Trabajo Practico 3 Solucionado
+
+
+// Trabajo Práctico 4
+/*Pide al usuario un número entero.  
+Convierte la entrada a un número entero.  
+Determina si el número es par o impar usando el operador módulo (%).  
+Muestra el resultado en la consola.*/
+let numero = parseInt(prompt("Ingrese un número entero:"));
+
+if (numero % 2 === 0) {
+    alert(numero + " es un número par.");
+} else {
+    alert(numero + " es un número impar.");
+}
