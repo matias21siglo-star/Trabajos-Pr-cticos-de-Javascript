@@ -20,9 +20,23 @@ if (compra < 100) {
  
 
 
+// Trabajo Práctico 2 
+/*Comparar números enteros
+Solicita al usuario dos números enteros.  
+Convierte las entradas a números enteros.  
+Determina cuál de los dos números es mayor, o si son iguales.  
+Muestra el resultado en la consola.*/
 
+let num1 = parseInt(prompt("Ingrese el primer número entero:"));
+let num2 = parseInt(prompt("Ingrese el segundo número entero:"));
 
-
+if (num1 > num2) {
+    alert(num1 + " es mayor que " + num2);
+} else if (num1 < num2) {
+    alert(num2 + " es mayor que" + num1);
+} else {
+    alert("Ambos números son iguales.");
+}
 
 
 
