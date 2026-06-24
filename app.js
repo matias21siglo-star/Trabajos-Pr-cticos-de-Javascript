@@ -72,6 +72,8 @@ if (promedio === 10) {
 Convierte la entrada a un número entero.  
 Determina si el número es par o impar usando el operador módulo (%).  
 Muestra el resultado en la consola.*/
+
+
 let numero = parseInt(prompt("Ingrese un número entero:"));
 
 if (numero % 2 === 0) {
@@ -79,3 +81,36 @@ if (numero % 2 === 0) {
 } else {
     alert(numero + " es un número impar.");
 }
+
+
+// Trabajo Practico 5
+/* En un restaurtante los clientes pueden pedir menu de carne, pescado o verdura.Si pide carne se le ofrecera como bebida vino tinto, si pide pescado se le ofrecera vino blanco y si pide verdura se le ofrecera agua.
+Si no elije el menu de la lista aparecera la frase elija carne, pescado o verdura.*/
+
+
+alert("😋Bienvenid@, te voy a sugerir la bebida que acompañara tu menu.");
+
+let opcion = prompt("🤓Que menu deseas hoy? 1.carne | 2.pescado | 3.verdura");
+ 
+switch (opcion) {
+    case "1":
+        alert("Su menu viene acompañado con vino tinto");
+        
+        break;
+
+        case "2":
+            alert("Su menu viene acompañado con vino blanco" );
+
+break;
+case "3": 
+alert ("Su menu viene acompañado con agua");
+break;
+
+    default:
+        alert("Recorda qie debes elegir entre las siguientes opciones: 1.carne | 2.pescado | 3. verduras");
+        break;
+}
+alert("gracias por usar nuestros servicios. nos vemos pronto");
+
+// Trabajo Practico 5 a revisar.
+//como se puede obsevar los codigos estan bien, los ejecuto en consola y funcion lo vuelvo a ejecutar y ya no muestra en consola a pesar de que grabo y actualizo
