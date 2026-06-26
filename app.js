@@ -101,12 +101,12 @@ switch (opcion) {
         case "2":
             alert("Su menu viene acompañado con vino blanco" );
 
-break;
-case "3": 
-alert ("Su menu viene acompañado con agua");
-break;
+        break;
+        case "3": 
+     alert ("Su menu viene acompañado con agua");
+        break;
 
-    default:
+      default:
         alert("Recorda qie debes elegir entre las siguientes opciones: 1.carne | 2.pescado | 3. verduras");
         break;
 }
@@ -114,3 +114,42 @@ alert("gracias por usar nuestros servicios. nos vemos pronto");
 
 // Trabajo Practico 5 a revisar.
 //como se puede obsevar los codigos estan bien, los ejecuto en consola y funcion lo vuelvo a ejecutar y ya no muestra en consola a pesar de que grabo y actualizo
+
+
+// Agrego ejercicio 
+/*
+Un comerciante hace descuentos a sus clientes de la siguiente forma:
+-Si ha comprado menos de 100 dolares no hay descuento.
+-Si la compra esta entre 100 y 300 dolares le descuenta un 5%
+-Si la compra esta por encima de 300 hasta 500 dolares le descuenta un 10%
+-Si la compra supera los 500 dolares le descuenta un 15%
+*/
+//Cambio switch(compra) por switch(true) para que me tome el valor ;seria como un truco.
+alert("😋 Bienvenidos al sistema de descuentos")
+let compra = Number(prompt("😋 Ingresa el valor de la compra...."));
+
+if (!isNaN(compra)){
+
+switch(true){
+    case compra <100:
+        console.log("no tiene descuento")
+        break;
+
+    case compra <=300:  
+        console.log("El descuento es del 5%");
+break;
+
+        
+case compra <=500:
+    console.log("El descuento es del 10%");
+    break;
+
+
+default:
+            console.log("Descuento del 15% ");
+            break;
+}
+
+}else {
+    alert("❌No ingreso un valor numerico");
+}
